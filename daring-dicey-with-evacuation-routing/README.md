@@ -134,6 +134,8 @@ Worth mentioning because it's genuinely where most of the debugging time went:
 
 ## Known limitations (we'd rather tell you than have you find out)
 
+#Demo video link - https://drive.google.com/file/d/1mnUKQ9jt7vviCBewsifDZS5rTD_OCRfJ/view?usp=drivesdk #
+
 - None of the vision models are independently benchmarked for accuracy on this specific use case — they're solid pretrained/fine-tuned models, but we haven't validated them against a labeled disaster dataset
 - The earthquake "model" is a CLIP zero-shot heuristic, not a purpose-trained detector — it's the weakest link in the detection chain and we say so in the UI
 - Road-damage avoidance in routing is best-effort, not guaranteed — we don't have segment-level GPS data for exactly which stretch of road is damaged
