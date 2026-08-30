@@ -2,7 +2,7 @@
 
 A dashboard that takes photos from a disaster site, figures out what's actually going on in them, and turns that into something a rescue team can use: which locations are worst hit, what order to hit them in, and how to actually get there.
 
-Built for [Hackathon Name] by [Team Name].
+Built for SIH 2026  by Daring Dicey.
 
 ## The problem we're actually solving
 
