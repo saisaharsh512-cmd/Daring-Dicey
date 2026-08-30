@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
+
+:root {
+  /* --- surfaces (Daring Dicey light brand, matches the deck) --- */
+  --bg-void: #eef1f7;
+  --bg-panel: #ffffff;
+  --bg-panel-raised: #f5f7fb;
+  --bg-inset: #eef1f7;
+  --border: #d7ddea;
+  --border-soft: #e3e7f0;
+
+  /* --- text --- */
+  --text-primary: #172038;
+  --text-secondary: #65708a;
+  --text-muted: #8891a8;
+
+  /* --- signal accent (Daring Dicey orange, brand-warm) --- */
+  --signal: #e8622c;
+  --signal-dim: #b84d22;
+  --signal-glow: rgba(232, 98, 44, 0.18);
+
+  /* --- brand navy (used for the topbar / high-contrast chrome) --- */
+  --navy: #111a2e;
+  --navy-2: #17223a;
+
+  /* --- severity scale --- */
+  --sev-critical: #d6483e;
+  --sev-high: #e8622c;
+  --sev-moderate: #d79a30;
+  --sev-low: #3f9e71;
+  --sev-uncertain: #8a63c9;
+  --sev-none: #7c8699;
+
+  /* --- type --- */
+  --font-display: "DM Sans", sans-serif;
+  --font-serif: "Fraunces", serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "DM Mono", "SFMono-Regular", monospace;
+
+  --radius-sm: 3px;
+  --radius-md: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-void);
+  background-image:
+    linear-gradient(rgba(232, 98, 44, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 98, 44, 0.03) 1px, transparent 1px);
+  background-size: 34px 34px;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--signal-glow);
+  color: var(--text-primary);
+}
+
+button {
+  font-family: inherit;
+}
+
+input, select {
+  font-family: inherit;
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--signal);
+}
+
+/* focus visibility per accessibility floor */
+:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 2px;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
