@@ -57,7 +57,7 @@ After a disaster, emergency teams face the same hard question everywhere:
 **where do we go first?**
 
 - A single event can produce dozens of damaged sites at once.
-- Response teams and rescue personnel are always limited — you can't send
+- Response teams and rescue personnel are always limited  you can't send
   everyone everywhere.
 - Roads, bridges, and access routes may themselves be damaged, so the
   fastest path on a map isn't always the real fastest path.
@@ -108,8 +108,8 @@ Dashboard: Overview · Hazard Analysis · Map · Evacuation ·
 ```
 
 The scoring, team allocation, and priority ranking are **deterministic
-rule-based logic** — not something an LLM guesses. The LLM's only job (and
-only when an API key is configured) is turning that already-computed data
+rule-based logic** not something an LLM guesses. The LLM's only job (and
+only when an API key is configured) is turning that already computed data
 into readable prose for the incident report; without a key, the report
 still generates, using deterministic template text instead.
 
@@ -117,7 +117,7 @@ still generates, using deterministic template text instead.
 
 ### 🧠 Disaster-specific AI damage detection
 
-The backend doesn't run one generic detector on every image — it **routes
+The backend doesn't run one generic detector on every image  it **routes
 to a specific set of models based on the disaster type you select**, and
 skips models that aren't relevant. Confirmed model set (from the app's own
 Model Status tab):
