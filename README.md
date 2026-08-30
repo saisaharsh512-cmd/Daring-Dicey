@@ -525,3 +525,7 @@ License information will be added.
 
 *The AI never certifies repairs or safety — qualified personnel and
 emergency authorities make the final call.*
+
+drive link
+
+https://drive.google.com/file/d/1mnUKQ9jt7vviCBewsifDZS5rTD_OCRfJ/view?usp=drivesdk 
